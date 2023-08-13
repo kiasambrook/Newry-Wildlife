@@ -1,0 +1,33 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore build artifacts
+/node_modules/
+/build/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore package-lock files
+package-lock.json
+
+# Ignore compiled CSS and JavaScript
+*.css.map
+*.js.map
+
+# Ignore sensitive files
+/wp-config.php
+/wp-config-*.php
+
+# Ignore development files
+.sass-cache/
+.vscode/
+.idea/
+
+# Ignore database backup files
+*.sql
+*.sql.gz
