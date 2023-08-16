@@ -21,13 +21,13 @@
             </div>
             <div class="w-full lg:w-1/2 mt-6 lg:mt-0">
                 <?php if ($hero_image) : ?>
-                    <img src="<?= $hero_image['url'] ?>" alt="<?= $hero_image['alt'] ?>" class="w-full rounded-lg shadow-md">
+                    <img src="<?= $hero_image['sizes']['hero-image'] ?>" alt="<?= $hero_image['alt'] ?>" class="w-full rounded-lg shadow-md">
                 <?php endif ?>
             </div>
         <?php else : ?>
             <div class="w-full lg:w-1/2 mt-6 lg:mt-0">
                 <?php if ($hero_image) : ?>
-                    <img src="<?= $hero_image['url'] ?>" alt="<?= $hero_image['alt'] ?>" class="w-full rounded-lg shadow-md">
+                    <img src="<?= $hero_image['sizes']['hero-image'] ?>" alt="<?= $hero_image['alt'] ?>" class="w-full rounded-lg shadow-md">
                 <?php endif ?>
             </div>
             <div class="w-full lg:w-1/2">
