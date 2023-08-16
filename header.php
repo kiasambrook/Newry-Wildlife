@@ -24,7 +24,7 @@
                 if ($menu_items) {
                 foreach ($menu_items as $menu_item) {
                     $custom_field = get_field('your_custom_field_name', $menu_item->ID);
-                    echo '<a href="' . esc_url($menu_item->url) . '"  class="text-gray-800 hover:text-opacity-70">' . esc_html($menu_item->title) . '</a>';
+                    echo '<a href="' . esc_url($menu_item->url) . '"  class="text-white hover:text-opacity-70">' . esc_html($menu_item->title) . '</a>';
                     if ($custom_field) {
                     echo  esc_html($custom_field);
                     }
