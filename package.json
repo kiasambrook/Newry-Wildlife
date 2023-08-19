@@ -13,6 +13,10 @@
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
