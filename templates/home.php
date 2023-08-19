@@ -60,6 +60,9 @@ get_header();
       <?php
         endwhile;
         wp_reset_postdata();
+        ?>
+        <a href="<?= get_post_type_archive_link( 'post' ); ?>" class="text-primary">See more <i class="fa-solid fa-arrow-right"></i></a>
+        <?php
       else :
         echo '<p>No blog posts found.</p>';
       endif;
