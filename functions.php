@@ -2,6 +2,7 @@
 // Include function files
 require_once( __DIR__ . '/functions/images.php');
 require_once( __DIR__ . '/functions/theme-support.php');
+require_once( __DIR__ . '/functions/menu.php');
 
 // Include post types
 require_once( __DIR__ . '/functions/post-types/local-biodiversity.php');
