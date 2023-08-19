@@ -49,7 +49,7 @@ get_header();
         while ($query->have_posts()) : $query->the_post();
       ?>
           <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <div class="h-48 w-full bg-cover bg-center" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>');"></div>
+            <img src='<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumb-square'); ?>' class="w-full"/>
             <div class="p-4">
               <p class="text-gray-400 text-sm"><?php echo get_the_date(); ?></p>
               <h3 class="text-xl font-semibold mt-2"><a href="<?php the_permalink(); ?>" class="text-primary hover:underline"><?php the_title(); ?></a></h3>
