@@ -4,13 +4,11 @@
  */
 if ( $data->utilities->get_element( 'thumb', $data->args ) ) {
 	?>
-	<div class="md:w-1/3 md:mr-4 md:mb-0 mb-4">
-                <span>
                  <?php
                  // Check if post has post thumbnail.
                  if ( ! empty( $data->events->post->logo_url ) ) {
 	                 // Thumbnails
-	                 printf( '<img class="eaw-img rounded-lg md:rounded-xl lg:rounded-2xl" style="" src="%3$s" alt="%4$s">',
+	                 printf( '<a class="%2$s" %1$s rel="bookmark" %6$s><img class="class="w-full h-48 object-cover" src="%3$s" alt="%4$s"></a>',
 		                 $data->event->booknow,
 		                 esc_attr( $data->utilities->get_element( 'thumb_align', $data->args ) ),
 		                 esc_url( $data->events->post->logo_url ),
@@ -21,7 +19,7 @@ if ( $data->utilities->get_element( 'thumb', $data->args ) ) {
 
 	                 // Display default image.
                  } elseif ( ! empty( $data->utilities->get_element( 'thumb_default', $data->args ) ) ) {
-	                 printf( '<img class="eaw-img rounded-lg md:rounded-xl lg:rounded-2xl"/>',
+	                 printf( '<a class="%2$s" %1$s rel="bookmark" %6$s><img class="class="w-full h-48 object-cover" src="%3$s" alt="%4$s"></a>',
 		                 $data->event->booknow,
 		                 esc_attr( $data->utilities->get_element( 'thumb_align', $data->args ) ),
 		                 esc_url( $data->utilities->get_element( 'thumb_default', $data->args ) ),
@@ -31,8 +29,6 @@ if ( $data->utilities->get_element( 'thumb', $data->args ) ) {
 	                 );
                  }
                  ?>
-                 </span>
-	</div>
 	<?php
 }
 

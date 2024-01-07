@@ -20,11 +20,11 @@ $linkedin =  get_option('linkedin');
                     <?php the_field('contact_description'); ?>
                 </p>
                 <?php if ($email) : ?>
-                    <a href="mailto:<?= $email ?>" class="border-t">
+                    <a href="mailto:<?= $email ?>" class="border-t my-4">
                         <i class="fa fa-envelope"></i> <?= $email ?>
                     </a>
                 <?php endif ?>
-                <div class="border-t social_icons">
+                <div class="border-t my-4 social_icons">
                     <?php if ($twitter) : ?>
                         <a href="<?= $twitter ?>" target="_blank">
                             <i class="fa-brands fa-twitter"></i>

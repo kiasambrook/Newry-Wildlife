@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 
-
-
 <div>
     <section class="relative z-10" style="background-color:#FFFFFF">
         <div class="container mx-auto py-12 lg:py-14 xl:py-20 relative z-10">
             <div class="flex items-center justify-between gap-6 mb-6 lg:mb-10 flex-wrap">
-                <h2 class="heading-large font-medium" style="color: rgb(17, 24, 39);">Local Biodiversity</h2>
+                <h2 class="heading-large font-medium" style="color: rgb(17, 24, 39);">Blog</h2>
             </div>
             <!-- Posts grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 mb-8 lg:mb-14">

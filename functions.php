@@ -14,7 +14,7 @@ function enqueue_custom_assets() {
     wp_enqueue_style('custom-style', get_template_directory_uri() . '/build/main.css', array(), '1.0.0', 'all');
 
     // Enqueue your compiled JS
-    wp_enqueue_script('custom-script', get_template_directory_uri() . '/build/main.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('custom-script', get_template_directory_uri() . '/build/main.js', array(), false, false);
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_custom_assets');

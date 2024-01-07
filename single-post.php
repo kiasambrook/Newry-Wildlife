@@ -9,6 +9,11 @@
                     <h1 class="text-xlarge text-h1 xl:text-7xl xl:leading-tight mb-4 text-center" style="color: rgb(255, 255, 255);"><?php the_title(); ?></h1>
                     <div class="flex flex-col lg:flex-row gap-2 items-center lg:justify-center body-large" style="color: rgb(255, 255, 255);">
                         <span><?php echo get_the_date(); ?></span>
+                        <span class="hidden lg:inline-block">·</span>
+                        <span>By <?php the_author(); ?></span>
+                    </div>
+                    <div class="flex items-center justify-center h-8 w-8 lg:h-10 lg:w-10 rounded-full overflow-hidden mt-3">
+                        <img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" alt="<?php echo get_the_author(); ?>" class="rounded-full overflow-hidden bg-white">
                     </div>
                 </div>
             </div>

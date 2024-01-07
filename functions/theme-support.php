@@ -13,6 +13,6 @@ function no_wordpress_errors(){
 add_filter( 'login_errors', 'no_wordpress_errors' );
 
 add_action( 'init', function() {
-    remove_post_type_support( 'post', 'editor' );
-    remove_post_type_support( 'page', 'editor' );
+    remove_post_type_support( 'post', 'excerpt' );
+    remove_post_type_support( 'page', 'excerpt' );
 }, 99);
