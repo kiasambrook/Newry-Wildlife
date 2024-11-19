@@ -2,18 +2,11 @@
 .DS_Store
 Thumbs.db
 
-# Ignore build artifacts
-/node_modules/
-/build/
-
 # Ignore log files
 *.log
 
 # Ignore environment files
 .env
-
-# Ignore package-lock files
-package-lock.json
 
 # Ignore compiled CSS and JavaScript
 *.css.map
