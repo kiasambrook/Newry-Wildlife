@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <?php while (have_posts()) : the_post(); ?>
     <div>
         <section class="relative flex items-center justify-center overflow-hidden min-h-120 flex-none z-10" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>'); background-position: center center; background-size: cover;">

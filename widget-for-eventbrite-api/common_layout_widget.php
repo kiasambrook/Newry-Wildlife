@@ -29,7 +29,6 @@ if ($data->utilities->get_element('widgetwrap', $data->args)) { ?>
 						<p class="mb-6"><?php the_field('events_text'); ?></p>
 					</div>
 					<div class="flex flex-wrap relative justify-start" style="gap: 40px;">
-
 						<?php if (false !== $data->events && $data->events->have_posts()) {
 							$data->template_loader->get_template_part('paginate_links_top' . $data->event->plan);
 						?>

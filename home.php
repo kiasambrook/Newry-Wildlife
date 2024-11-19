@@ -28,6 +28,10 @@
                 endif;
                 ?>
             </div>
+            <div class="flex w-full justify-center gap-10">
+                <div class="nav-previous"><?php previous_posts_link( '<i class="fa-solid fa-chevron-left"></i> Prev' ); ?></div>
+                <div class="nav-next"><?php next_posts_link( 'Next <i class="fa-solid fa-chevron-right"></i>' ); ?></div>
+            </div>
         </div>
     </section>
 </div>

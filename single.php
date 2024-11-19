@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <?php while (have_posts()) : the_post(); ?>
     <div>
         <section class="relative flex items-center justify-center overflow-hidden min-h-120 flex-none z-10" style="background-image: url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>'); background-position: center center; background-size: cover;">
@@ -10,6 +9,7 @@
                     <div class="flex flex-col lg:flex-row gap-2 items-center lg:justify-center body-large" style="color: rgb(255, 255, 255);">
                         <span><?php echo get_the_date(); ?></span>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -18,7 +18,11 @@
                 <div class="max-w-3xl mx-auto">
                     <div class="rich-text-block max-w-xl mx-auto">
                         <h2><?php the_title(); ?></h2>
-                        <?php the_content(); ?>
+                        <?php 
+							the_content()
+
+						?>
+						<?php the_field( 'bio_content' ); ?>
                     </div>
                 </div>
             </div>

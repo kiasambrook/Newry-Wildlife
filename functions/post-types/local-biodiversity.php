@@ -35,7 +35,7 @@ function biodiversity_post_type() {
 		'label'                 => __( 'Local Biodiversity', 'text_domain' ),
 		'description'           => __( 'Local Biodiversity Posts', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'thumbnail', 'comments', 'custom-fields' ),
+		'supports'              => array( 'title', 'thumbnail', 'comments', 'custom-fields', 'content' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,

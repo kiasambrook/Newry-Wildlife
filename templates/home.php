@@ -34,7 +34,7 @@ $linkedin =  get_option('linkedin');
 
 <?php // Events 
 ?>
-<?= do_shortcode('[wfea layout="dean2023" status="all" thumb_align="eaw-alignleft" widgetwrap="false" show_prices="true" newtab="true"]'); ?>
+<?= do_shortcode('[wfea layout="dean2023" thumb_align="eaw-alignleft" widgetwrap="false" show_prices="true" newtab="true"]'); ?>
 
 <!-- <?php // Local Sites ? 
         ?>
