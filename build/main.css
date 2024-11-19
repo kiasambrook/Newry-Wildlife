@@ -501,14 +501,23 @@ video {
 .top-0{
   top: 0px;
 }
-.\!z-\[2000\]{
-  z-index: 2000 !important;
+.right-5{
+  right: 1.25rem;
+}
+.top-5{
+  top: 1.25rem;
 }
 .z-0{
   z-index: 0;
 }
 .z-10{
   z-index: 10;
+}
+.z-40{
+  z-index: 40;
+}
+.z-50{
+  z-index: 50;
 }
 .col-span-2{
   grid-column: span 2 / span 2;
@@ -591,6 +600,15 @@ video {
 .h-full{
   height: 100%;
 }
+.h-screen{
+  height: 100vh;
+}
+.h-1\/2{
+  height: 50%;
+}
+.h-1\/4{
+  height: 25%;
+}
 .w-5{
   width: 1.25rem;
 }
@@ -602,6 +620,18 @@ video {
 }
 .w-full{
   width: 100%;
+}
+.w-screen{
+  width: 100vw;
+}
+.w-2{
+  width: 0.5rem;
+}
+.w-1\/3{
+  width: 33.333333%;
+}
+.w-1\/4{
+  width: 25%;
 }
 .max-w-3xl{
   max-width: 48rem;
@@ -692,6 +722,10 @@ video {
 .gap-y-4{
   row-gap: 1rem;
 }
+.gap-x-2{
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -721,11 +755,21 @@ video {
 .border{
   border-width: 1px;
 }
+.border-2{
+  border-width: 2px;
+}
 .border-b-2{
   border-bottom-width: 2px;
 }
 .border-t{
   border-top-width: 1px;
+}
+.border-r-2{
+  border-right-width: 2px;
+}
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 .bg-gray-100{
   --tw-bg-opacity: 1;
@@ -738,6 +782,12 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-opacity-75{
+  --tw-bg-opacity: 0.75;
+}
+.bg-opacity-95{
+  --tw-bg-opacity: 0.95;
 }
 .object-cover{
   -o-object-fit: cover;
@@ -810,6 +860,12 @@ video {
 .pt-8{
   padding-top: 2rem;
 }
+.pr-3{
+  padding-right: 0.75rem;
+}
+.pb-3{
+  padding-bottom: 0.75rem;
+}
 .text-left{
   text-align: left;
 }
@@ -818,6 +874,9 @@ video {
 }
 .text-right{
   text-align: right;
+}
+.text-end{
+  text-align: end;
 }
 .text-3xl{
   font-size: 1.875rem;
@@ -836,10 +895,6 @@ video {
 }
 .font-semibold{
   font-weight: 600;
-}
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .text-gray-500{
   --tw-text-opacity: 1;
@@ -866,6 +921,12 @@ video {
 }
 .opacity-100{
   opacity: 1;
+}
+.opacity-90{
+  opacity: 0.9;
+}
+.opacity-95{
+  opacity: 0.95;
 }
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -5246,24 +5307,21 @@ button.date-input:hover {
 }
 
 .mobile-menu-overlay-active {
-  display: block;
+  display: flex;
 }
 
-.mobile-menu-container {
-  /* Add your mobile menu styles */
-  position: sticky;
-  top: 100px; /* Adjust this value according to your header height */
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #ffffff; /* Example background color */
-  padding: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example box shadow */
+.before\:border-2::before{
+  content: var(--tw-content);
+  border-width: 2px;
 }
 
 .hover\:bg-green-600:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.hover\:pl-1:hover{
+  padding-left: 0.25rem;
 }
 
 .hover\:text-gray-700:hover{
@@ -5277,6 +5335,10 @@ button.date-input:hover {
 
 .hover\:underline:hover{
   text-decoration-line: underline;
+}
+
+.hover\:underline-offset-8:hover{
+  text-underline-offset: 8px;
 }
 
 .focus\:outline-none:focus{
@@ -5313,17 +5375,44 @@ button.date-input:hover {
     width: -moz-max-content;
     width: max-content;
   }
+  .md\:w-1\/4{
+    width: 25%;
+  }
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .md\:flex-row{
     flex-direction: row;
   }
+  .md\:justify-center{
+    justify-content: center;
+  }
   .md\:gap-4{
     gap: 1rem;
   }
   .md\:rounded-xl{
     border-radius: 0.75rem;
+  }
+  .md\:border-b-2{
+    border-bottom-width: 2px;
+  }
+  .md\:border-r-2{
+    border-right-width: 2px;
+  }
+  .md\:border-b-0{
+    border-bottom-width: 0px;
+  }
+  .md\:pr-3{
+    padding-right: 0.75rem;
+  }
+  .md\:pb-0{
+    padding-bottom: 0px;
+  }
+  .md\:text-left{
+    text-align: left;
+  }
+  .md\:text-end{
+    text-align: end;
   }
 }
 

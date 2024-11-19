@@ -4590,17 +4590,5 @@ button.date-input:hover {
 }
 
 .mobile-menu-overlay-active {
-    display: block;
-}
-
-.mobile-menu-container {
-    /* Add your mobile menu styles */
-    position: sticky;
-    top: 100px; /* Adjust this value according to your header height */
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #ffffff; /* Example background color */
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example box shadow */
+    display: flex;
 }

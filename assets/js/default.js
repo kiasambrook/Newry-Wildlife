@@ -10,7 +10,12 @@ $(document).ready(function () {
 
     // Toggle mobile menu visibility on toggle button click
     toggleBtn.addEventListener('click', () => {
-        mobileMenuOverlay.classList.toggle('hidden');
-        mobileMenuOverlay.classList.toggle('mobile-menu-overlay-active');
+        mobileMenuOverlay.classList.remove('hidden');
+        mobileMenuOverlay.classList.add('mobile-menu-overlay-active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        mobileMenuOverlay.classList.add('hidden');
+        mobileMenuOverlay.classList.remove('mobile-menu-overlay-active');
     });
 });
