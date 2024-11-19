@@ -10714,6 +10714,19 @@ return jQuery;
 } );
 
 
+/***/ }),
+
+/***/ "./assets/scss/pages/default.scss":
+/*!****************************************!*\
+  !*** ./assets/scss/pages/default.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -10785,11 +10798,15 @@ return jQuery;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
+var __webpack_exports__ = {};
 /*!****************************!*\
   !*** ./assets/js/index.js ***!
   \****************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _scss_pages_default_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/pages/default.scss */ "./assets/scss/pages/default.scss");
 
 })();
 
@@ -10804,16 +10821,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
-  console.log("HERE");
+  // Add this script at the end of your HTML body or in a separate JavaScript file
 
-  // Your jQuery-dependent code here
-  const toggleBtn = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#menu-toggle');
-  const mobileMenuOverlay = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.mobile-menu-overlay');
-  const closeBtn = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#close-btn');
+  // Get the toggle button and mobile menu overlay
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  const closeBtn = document.getElementById('close-btn');
 
   // Toggle mobile menu visibility on toggle button click
-  toggleBtn.on('click', function () {
-    mobileMenuOverlay.toggleClass('hidden mobile-menu-overlay-active');
+  toggleBtn.addEventListener('click', () => {
+    mobileMenuOverlay.classList.toggle('hidden');
+    mobileMenuOverlay.classList.toggle('mobile-menu-overlay-active');
   });
 });
 })();

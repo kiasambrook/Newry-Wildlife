@@ -4604,14 +4604,3 @@ button.date-input:hover {
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Example box shadow */
 }
-
-/* Show Mobile Menu */
-@media screen and (max-width: 767px) {
-    .lg\\:hidden {
-        display: none !important;
-    }
-
-    .mobile-menu-overlay {
-        display: flex;
-    }
-}
