@@ -37,6 +37,9 @@ function theme_settings_init() {
     add_settings_field('instagram', 'Instagram Account URL', 'insta_callback', 'theme-settings', 'general_section');
     register_setting('theme-settings-group', 'instagram');
 
+    add_settings_field('facebook', 'Facebook Account URL', 'facebook_callback', 'theme-settings', 'general_section');
+    register_setting('theme-settings-group', 'facebook');
+
     add_settings_field('linkedin', 'Linkedin Account URL', 'linkedin_callback', 'theme-settings', 'general_section');
     register_setting('theme-settings-group', 'linkedin');
 }
@@ -65,6 +68,11 @@ function twitter_callback() {
 function insta_callback() {
     $instagram_account = esc_attr(get_option('instagram'));
     echo "<input type='text' name='instagram' value='$instagram_account' class='regular-text'>";
+}
+
+function facebook_callback() {
+    $facebook_account = esc_attr(get_option('facebook'));
+    echo "<input type='text' name='facebook' value='$facebook_account' class='regular-text'>";
 }
 
 function linkedin_callback() {

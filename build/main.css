@@ -793,6 +793,10 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -802,6 +806,9 @@ video {
 }
 .pb-16{
   padding-bottom: 4rem;
+}
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 .pb-20{
   padding-bottom: 5rem;
@@ -873,6 +880,9 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.no-underline{
+  text-decoration-line: none;
 }
 .opacity-100{
   opacity: 1;
@@ -5264,9 +5274,24 @@ button.date-input:hover {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
+.hover\:text-blue-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-700:hover{
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
 .hover\:text-gray-700:hover{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-400:hover{
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 .hover\:text-opacity-70:hover{
@@ -5294,6 +5319,11 @@ button.date-input:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){

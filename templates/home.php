@@ -10,6 +10,7 @@ $logo_url = get_option('logo_url');
 $email = get_option('contact_email');
 $twitter =  get_option('twitter');
 $instagram =  get_option('instagram');
+$facebook =  get_option('facebook');
 $linkedin =  get_option('linkedin');
 ?>
 
@@ -176,28 +177,33 @@ $linkedin =  get_option('linkedin');
         <div class="relative z-10 container mx-auto pt-16 lg:pt-32 pb-16 lg:pb-32">
             <div class="transition-all transition-all ease-in-out duration-500  opacity-100 translate-y-0 flex flex-col w-full gap-10 lg:gap-20 lg:flex-row">
                 <div class="w-full lg:w-1/2 lg:mt-10">
-                    <div class="rich-text-block" style="color: rgb(17, 24, 39);">
+                    <div class="" style="color: rgb(17, 24, 39);">
                         <h2>Get in Touch</h2>
-                        <p>Reach out to us using the contact form below. We look forward to hearing from you and assisting you with your needs.</p>
+                        <p class="pb-2">Reach out to us using the contact form below. We look forward to hearing from you and assisting you with your needs.</p>
                         <?php if ($email) : ?>
-                            <a href="mailto:<?= $email ?>" class="">
-                                <i class="fa fa-envelope"></i> <?= $email ?>
+                            <a href="mailto:<?= $email ?>" class="group">
+                                <i class="fa fa-envelope group-hover:text-gray-400"></i> <?= $email ?>
                             </a>
                         <?php endif ?>
-                        <div class="social_icons">
+                        <div class="social_icons py-3 flex gap-2">
                             <?php if ($twitter) : ?>
-                                <a href="<?= $twitter ?>" target="_blank">
-                                    <i class="fa-brands fa-twitter"></i>
+                                <a class="no-underline" href="<?= $twitter ?>" target="_blank">
+                                    <i class="fa-brands fa-twitter hover:text-blue-400"></i>
                                 </a>
                             <?php endif ?>
                             <?php if ($instagram) : ?>
-                                <a href="<?= $instagram ?>" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
+                                <a class="no-underline" href="<?= $instagram ?>" target="_blank">
+                                    <i class="fa-brands fa-instagram hover:text-purple-400"></i>
+                                </a>
+                            <?php endif ?>
+                            <?php if ($facebook) : ?>
+                                <a class="no-underline" href="<?= $facebook ?>" target="_blank">
+                                    <i class="fa-brands fa-facebook hover:text-blue-700"></i>
                                 </a>
                             <?php endif ?>
                             <?php if ($linkedin) : ?>
-                                <a href="<?= $linkedin ?>" target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
+                                <a class="no-underline" href="<?= $linkedin ?>" target="_blank">
+                                    <i class="fa-brands fa-linkedin hover:text-blue-700"></i>
                                 </a>
                             <?php endif ?>
                         </div>

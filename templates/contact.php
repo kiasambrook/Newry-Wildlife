@@ -26,17 +26,17 @@ $linkedin =  get_option('linkedin');
                 <?php endif ?>
                 <div class="border-t my-4 social_icons">
                     <?php if ($twitter) : ?>
-                        <a href="<?= $twitter ?>" target="_blank">
+                        <a class="no-underline" href="<?= $twitter ?>" target="_blank">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                     <?php endif ?>
                     <?php if ($instagram) : ?>
-                        <a href="<?= $instagram ?>" target="_blank">
+                        <a class="no-underline" href="<?= $instagram ?>" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                         </a>
                     <?php endif ?>
                     <?php if ($linkedin) : ?>
-                        <a href="<?= $linkedin ?>" target="_blank">
+                        <a class="no-underline" href="<?= $linkedin ?>" target="_blank">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     <?php endif ?>
