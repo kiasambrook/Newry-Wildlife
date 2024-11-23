@@ -38,7 +38,7 @@ function ninja_forms_dashboard_widget_content() {
     echo '<ul>';
     foreach ($subs as $sub) {
         // link to submission message
-        echo '<li><a href="' . admin_url('post.php?post=' . $sub->get_id() . '&action=edit') . '">View</a>' . $sub->get_field_value('name') . ' | ' . $sub->get_sub_date() . '</li>';
+        echo '<li><a href="' . admin_url('post.php?post=' . $sub->get_id() . '&action=edit') . '">View</a> | ' . $sub->get_field_value('name') . ' | ' . $sub->get_sub_date() . '</li>';
     }
     echo '</ul>';
 }
