@@ -3,6 +3,7 @@
 require_once( __DIR__ . '/functions/images.php');
 require_once( __DIR__ . '/functions/theme-support.php');
 require_once( __DIR__ . '/functions/menu.php');
+require_once( __DIR__ . '/functions/admin.php');
 
 // Include post types
 require_once( __DIR__ . '/functions/post-types/local-biodiversity.php');
