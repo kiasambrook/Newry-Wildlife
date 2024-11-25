@@ -177,7 +177,7 @@ $linkedin =  get_option('linkedin');
         <div class="relative z-10 container mx-auto pt-16 lg:pt-32 pb-16 lg:pb-32">
             <div class="transition-all transition-all ease-in-out duration-500  opacity-100 translate-y-0 flex flex-col w-full gap-10 lg:gap-20 lg:flex-row">
                 <div class="w-full lg:w-1/2 lg:mt-10">
-                    <div class="" style="color: rgb(17, 24, 39);">
+                    <div class="rich-text-block" style="color: rgb(17, 24, 39);">
                         <h2>Get in Touch</h2>
                         <p class="pb-2">Reach out to us using the contact form below. We look forward to hearing from you and assisting you with your needs.</p>
                         <?php if ($email) : ?>
