@@ -58,7 +58,7 @@
             <div class="mobile-menu-overlay hidden absolute top-0 left-0 h-screen w-screen bg-primary text-white z-50  bg-opacity-95 justify-center items-center gap-2 flex-col md:flex-row">
                 <button id="close-btn" class="close mobile-menu-close absolute top-5 right-5 text-xl">&#x2715;</button>
                 <div class="divider items-center md:border-r-2 md:w-1/4 md:pr-3 border-white text-center md:text-end">
-                    <h1 class="heading-xlarge"><?php echo get_bloginfo( 'name' ); ?></h1>
+                    <a href="/"><h2 class="heading-xlarge"><?php echo get_bloginfo( 'name' ); ?></h2></a>
                 </div>
 
                 <div class="mobile-menu-container text-center md:text-left">
